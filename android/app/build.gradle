@@ -53,6 +53,7 @@ dependencies {
   implementation libs.router
   implementation libs.kit
   implementation libs.core
+  implementation libs.adapter
 
   kapt libs.dagger_compiler
   kapt libs.dagger_android_processor
