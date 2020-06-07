@@ -3,7 +3,6 @@ package com.gmail.jiangyang5157.memo.app
 import androidx.lifecycle.ViewModelProvider
 import com.gmail.jiangyang5157.android.router.core.MultiRouter
 import com.gmail.jiangyang5157.android.router.fragment.FragmentRouter
-import com.gmail.jiangyang5157.core.util.AppExecutor
 import com.gmail.jiangyang5157.core.util.ViewModelFactory
 import com.gmail.jiangyang5157.kotlin_kit.model.Key
 import com.gmail.jiangyang5157.memo.category.CategoryActivity
@@ -18,10 +17,6 @@ import javax.inject.Singleton
 
 @Module(includes = [MainAppInjection::class])
 class MainAppModule {
-
-    @Provides
-    @Singleton
-    fun provideAppExecutor(): AppExecutor = AppExecutor()
 
     @Provides
     @Singleton
